@@ -1,0 +1,469 @@
+/*
+ * Copyright (C) 2016-2018 phantombot.tv
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ * @author ScaniaTV
+ */
+
+:root {
+    --body-color: #1b1b1b;
+    --tab-color: #212121;
+    --url-color: #6441a5;
+    --url-hover-color: #6b49ab;
+    --text-color: #cccccc;
+    --table-odd: #2f2e2e;
+    --table-even: #424242;
+    --btn-bgn-color: #6441a5;
+    --btn-bgn-hover: #6b49ab;
+    --btn-txt-color: #2c2e2f;
+    --btn-bor-color: #4b3671;
+    --devider: #424242;
+    --modal-body: #1b1b1b;
+    --input-box: #212121;
+    --drop-hover: #232323;
+}
+
+body {
+    background-color: var(--body-color);
+    max-width: 100%;
+    margin-bottom: 45px;
+    overflow-x: hidden;
+}
+
+* {
+    font-family: "Roboto", arial;
+    color: var(--text-color);
+}
+
+a {
+    text-decoration: none;
+    color: var(--url-color);
+}
+
+a:hover {
+    text-decoration: none;
+    color: var(--url-hover-color);
+}
+
+.header {
+    background-color: #6441a5;
+    margin-top: -20px;
+    margin-bottom: 10px;
+    max-width: 100%;
+    height: 85px;
+    -webkit-box-shadow: 0px 3px 5px #000;
+    -moz-box-shadow:    0px 3px 5px #000;
+    box-shadow:         0px 3px 5px #000;
+    overflow: hidden;
+}
+
+.logo-header {
+    height: 65px;
+    margin-left: 15px;
+    float: left;
+    display: inline-block;
+    margin-top: 17px;
+}
+
+.copyright {
+    font-size: 14px;
+    float: left;
+    width: 100%;
+    padding-top: 5px;
+    text-align: center;
+    bottom: 0px;
+    background-color: var(--tab-color);
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+    position: fixed;
+    height: 30px;
+}
+
+.player-section {
+    display: block;
+    height: 715px;
+    width: 100%;
+    float: left;
+    margin-top: 15px;
+    background-color: var(--tab-color);
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+.queue-section {
+    display: block;
+    height: 350px;
+    width: 100%;
+    float: right;
+    margin-top: 15px;
+    background-color: var(--tab-color);
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+.playlist-section {
+    display: block;
+    height: 350px;
+    width: 100%;
+    float: right;
+    margin-top: 15px;
+    background-color: var(--tab-color);
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+.yt-frame {
+    margin-top: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+    height: 514px;
+    width: calc(100% - 30px);
+}
+
+.player-controls {
+    margin-top: 10px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.left-controls {
+    display: inline-block;
+    width: calc(70% - 10px);
+}
+
+.play-pause-controls {
+    display: inline-block;
+    width: 100px;
+}
+
+.progress-slider {
+    display: inline-block;
+    width: calc(100% - 135px);
+    margin-right: 10px;
+}
+
+.right-controls {
+    display: inline-block;
+    width: 30%;
+}
+
+.mute-control {
+    display: inline-block;
+    width: 30px;
+}
+
+.volume-slider {
+    display: inline-block;
+    width: calc(100% - 40px);
+}
+
+#volume-slider-value {
+    display: inline-block;
+    float: right;
+}
+
+#progress-slider-value {
+    display: block;
+    float: right;
+}
+
+.video-information {
+    font-size: 14px;
+    margin-left: 15px;
+    margin-top: 5px;
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+#queue-table {
+    margin-top: 15px;
+    margin-left: 15px;
+}
+
+.queue-table {
+    margin-top: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+    max-height: 265px;
+    overflow-y: scroll;
+}
+
+.playlist-table {
+    margin-top: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+    max-height: 265px;
+    overflow-y: scroll;
+}
+
+.queue-section-title {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.devider {
+    display: block;
+    border-top-width: 1px;
+    border-top-style: solid;
+    margin: 0;
+    border-top-color: var(--devider);
+}
+
+.header-button {
+    float: right;
+}
+
+.clickable {
+    cursor: pointer;
+}
+
+/* Loader */
+
+.loader {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+    width: 150px;
+    height: 150px;
+    margin: -75px 0 0 -75px;
+    border: 16px solid #f2f2f2;
+    border-radius: 50%;
+    border-top: 16px solid #6441A4;
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+
+/* Bootstrap buttons */
+
+.btn {
+    border-radius: 0px;
+    cursor: pointer;
+}
+
+.btn:focus,
+.btn:active:focus,
+.btn.active:focus {
+    border-radius: 0px;
+    outline: none;
+    box-shadow: none;
+}
+
+.btn-secondary,
+.btn-primary {
+    color: var(--text-color);
+    background-color: var(--btn-bgn-color);
+    border-color: var(--btn-bor-color);
+}
+
+.btn-secondary:hover,
+.btn-primary:hover {
+    color: var(--text-color);
+    background-color: var(--btn-bgn-hover);
+    border-color: var(--btn-bor-color);
+}
+
+.btn-secondary.active,
+.btn-secondary:active,
+.show>.btn-secondary.dropdown-toggle {
+    color: var(--text-color);
+    background-color: var(--drop-hover);
+    border-color: var(--input-box);
+}
+
+
+/* Dropdown */
+
+.dropdown,
+.dropdown-toggle {
+    text-align: left;
+    width: 100%;
+    color: var(--text-color);
+    background-color: var(--input-box);
+    border-color: var(--input-box);
+}
+
+.dropdown:hover,
+.dropdown-toggle:hover {
+    color: var(--text-color);
+    background-color: var(--drop-hover);
+    border-color: var(--drop-hover);
+}
+
+.dropdown-menu {
+    border-radius: 0px;
+    text-align: left;
+    width: 100%;
+    background-color: #171717;
+}
+
+.dropdown-item {
+    text-align: left;
+    width: 100%;
+    color: var(--text-color);
+}
+
+.dropdown-item:hover {
+    background-color: #232323;
+    color: var(--text-color);
+}
+
+.dropdown-toggle::after {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: .3em;
+    vertical-align: middle;
+    content: "";
+    border-top: .3em solid;
+    border-right: .3em solid transparent;
+    border-left: .3em solid transparent;
+    float: right;
+    margin-top: 8px;
+}
+
+
+/* Bootsrap sliders */
+
+.slider.slider-horizontal {
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 100%;
+}
+
+.slider-handle,
+.min-slider-handle,
+.round {
+    cursor: pointer;
+}
+
+.slider-selection {
+    background-image: linear-gradient(to bottom, #989797 0, #989797 100%);
+}
+
+.slider-track,
+.slider-track-low,
+.slider-track-high {
+    background-color: #989797;
+    background-image: linear-gradient(to bottom, #989797 0, #989797 100%);
+}
+
+.slider-handle {
+    background-image: linear-gradient(to bottom, #6441a5 0, #6441a5 100%);
+}
+
+
+
+/* Table code */
+
+table {
+    border: none;
+    width: 100%;
+}
+
+table tr:nth-child(odd) {
+    background: var(--table-odd);
+    color: black;
+    font-size: 14px;
+}
+
+table tr:nth-child(even) {
+    background: var(--table-even);
+    color: black;
+    font-size: 14px;
+}
+
+table td {
+    padding: 5px;
+    text-align: left;
+    vertical-align: middle;
+}
+
+table th {
+    padding: 5px;
+    text-align: left;
+    vertical-align: middle;
+}
+
+
+/* Modals */
+
+.modal-content {
+    border-radius: 0px;
+}
+
+.modal-body {
+    background-color: var(--modal-body);
+}
+
+.modal-footer {
+    border-top: 1px solid var(--devider);
+    background-color: var(--modal-body);
+}
+
+.modal-header {
+    border-bottom: 1px solid var(--devider);
+    background-color: var(--modal-body);
+}
+
+.form-control {
+    color: var(--text-color);
+    background-color: var(--input-box);
+    border-radius: 0px;
+    border: 1px solid rgba(70, 70, 70, 0.15);
+}
+
+.form-control:focus, .form-control:active {
+    color: var(--text-color);
+    background-color: var(--drop-hover);
+    border-color: var(--btn-bgn-color);
+    border-radius: 0px;
+}
+
+.form-control:hover {
+    background-color: var(--drop-hover);
+}
+
+.close,
+.close:focus,
+.close:hover {
+    color: var(--text-color);
+}
+
+.off {
+    display: none;
+}

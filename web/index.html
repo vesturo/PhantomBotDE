@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>PhantomBotDE</title>
+        <meta name="theme-color" content="#570075">
+        <link rel="icon" href="favicon.ico" type="image/x-icon" />
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+        <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+        <link href="common/css/fontawesome-all.min.css" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <div class="header">
+            <img id="logo" src="common/images/logo.png"/>
+            <span>
+                <a target="_blank" href="https://www.patreon.com/phantombotDE" id="header-right">
+                    <i data-toggle="tooltip" data-placement="bottom" title="Patreon" style="color: white" class="fab fa-patreon fa-lg" aria-hidden="true"></i>
+                </a>
+            </span>
+            <span>
+                <a target="_blank" href="https://discord.gg/9JsZyT4" id="header-right">
+                    <i data-toggle="tooltip" data-placement="bottom" title="Discord" style="color: white" class="fab fa-discord fa-lg" aria-hidden="true"></i>
+                </a>
+            </span>
+            <span>
+                <a target="_blank" href="https://twitter.com/VesturoTV" id="header-right">
+                    <i data-toggle="tooltip" data-placement="bottom" title="Twitter" style="color: white" class="fab fa-twitter fa-lg" aria-hidden="true"></i>
+                </a>
+            </span>
+            <span>
+                <a target="_blank" href="https://blog.phantombot.tv/" id="header-right">
+                    <i data-toggle="tooltip" data-placement="bottom" title="Englischer Blog" style="color: white" class="fas fa-rss fa-lg" aria-hidden="true"></i>
+                </a>
+            </span>
+            <span>
+                <a target="_blank" href="https://community.phantombot.tv" id="header-right">
+                    <i data-toggle="tooltip" data-placement="bottom" title="Community Forum" style="color: white" class="fab fa-discourse fa-lg" aria-hidden="true"></i>
+                </a>
+            </span>
+        </div>
+
+        <div class="main">
+            <div class="launcher" data-toggle="tooltip" data-placement="right" title="Benutzername und Passwort findest du in der botlogin.txt unter Paneluser und Pannelpassword.">
+                <script>
+                    var urlInfo = window.location.host.split(":");
+                    var url = urlInfo[0];
+                    var port = (typeof urlInfo[1] === 'undefined' ? '80' : urlInfo[1]);
+                    var protocol = window.location.href.indexOf("https://") == 0 ? "https" : "http";
+                    document.write('<a target="_blank" style="color: white;" href="' + protocol + '://' + urlInfo[0] + ':' + port + '/ytplayer">');
+                </script>
+                <span id="middle">
+                    <span id="spacer" />
+                    <i id="fontawesome" class="fab fa-youtube" aria-hidden="true"></i>
+                    <span id="spacer">Starte den PhantomBotDE YouTube Player</span>
+                </span>
+                </a>
+                <span class="launcher-lock"><i class="fas fa-lock"></i></span>
+            </div>
+
+            <div class="launcher" data-toggle="tooltip" data-placement="right" title="Benutzername und Passwort findest du in der botlogin.txt unter Paneluser und Pannelpassword.">
+                <script>
+                    var urlInfo = window.location.host.split(":");
+                    var url = urlInfo[0];
+                    var port = (typeof urlInfo[1] === 'undefined' ? '80' : urlInfo[1]);
+                    var protocol = window.location.href.indexOf("https://") == 0 ? "https" : "http";
+                    document.write('<a target="_blank" style="color: white;" href="' + protocol + '://' + urlInfo[0] + ':' + port + '/panel">');
+                </script>
+                <span id="middle">
+                    <span id="spacer" />
+                    <i id="fontawesome" class="fas fa-desktop" aria-hidden="true"></i>
+                    <span id="spacer">Starte das PhantomBotDE Kontrollpanel</span>
+                </span>
+                </a>
+                <span class="launcher-lock"><i class="fas fa-lock"></i></span>
+            </div>
+
+            <div class="launcher">
+                <script>
+                    var urlInfo = window.location.host.split(":");
+                    var url = urlInfo[0];
+                    var port = (typeof urlInfo[1] === 'undefined' ? '80' : urlInfo[1]);
+                    var protocol = window.location.href.indexOf("https://") == 0 ? "https" : "http";
+                    document.write('<a target="_blank" style="color: white;" href="' + protocol + '://' + urlInfo[0] + ':' + port + '/playlist">');
+                </script>
+                <span id="middle">
+                    <span id="spacer" />
+                    <i id="fontawesome" class="fas fa-music" aria-hidden="true"></i>
+                    <span id="spacer">Starte die PhantomBotDE YouTube Playlist Anzeige</span>
+                </span>
+                </a>
+            </div>
+
+        </div>
+
+        <div id="copyright">
+            PhantomBotDE - ein kostenloser Multifunktions Twitch Chat Bot<br>
+            <a href="https://phantombot.tv">phantombot.tv</a>
+        </div>
+
+        <script>$(document).ready(function() { $('[data-toggle="tooltip"').tooltip(); });</script>
+
+    </body>
+</html>
