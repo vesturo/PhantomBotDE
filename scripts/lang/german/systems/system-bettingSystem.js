@@ -23,7 +23,7 @@ $.lang.register('bettingsystem.saveformat.usage', 'Verwendung: !bet saveformat [
 $.lang.register('bettingsystem.saveformat.set', 'Speicherformat geändert zu $1.');
 $.lang.register('bettingsystem.gain.usage', 'Verwendung: !bet gain [Prozent]');
 $.lang.register('bettingsystem.gain.set', 'Gewinnausschüttung auf $1% festgelegt.');
-$.lang.register('bettingsystem.lookup.usage', 'Verwendung: !bet lookup [$1]');
+$.lang.register('bettingsystem.lookup.usage', 'Verwendung: !bet lookup [$1] - nutze _# nach dem Dateum wenn du mehrere Gewinnespiele am Tag machst.');
 $.lang.register('bettingsystem.lookup.show', 'Wette von [$1] $2');
 $.lang.register('bettingsystem.lookup.null', 'An diesem Tag wurden keine Wetten abgegeben.');
 $.lang.register('bettingsystem.now', 'jetzt');

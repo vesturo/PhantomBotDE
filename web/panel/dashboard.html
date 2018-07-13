@@ -20,6 +20,9 @@
 
 <!-- This is outside of the accordion, so will always be on top of the tab -->
 
+<!-- New panel alert. -->
+<div id="new-panel-alert"></div>
+
 <!-- Accordion object.  Each section is separated by an <h3 /> header and the content is to be enclosed in <div />.  -->
 <div id="dashboardAccordion">
     <h3>Twitch</h3>
@@ -33,10 +36,6 @@
                    <span align="char" id="lastDonator" placeholder="-" />
             </td>
         </table>
-        <br>
-    <div>
-    <iframe style="position: relative; left: 4%; border-style: solid; border-color: #6136b1; border-width: 3px;" src="http://player.twitch.tv/?muted=true&channel=DEINKANALNAME" width="620" height="360" allowfullscreen></iframe>
-    </div>
         <br>
         <form role="form">
             <div class="form-group" onkeypress="return event.keyCode != 13">
@@ -74,10 +73,10 @@
             </div>
         </form>
 
-        <button type="button" class="btn btn-alert inline pull-left" onclick="$.disconnect()" 
+        <button type="button" class="btn btn-alert inline pull-left" onclick="$.disconnect()"
         data-toggle="tooltip" title="HINWEIS: Dadurch wird der Bot aus dem Kanal entfernt und du musst ihn manuell wieder verbinden.">Entfernen</button>
 
-        <button type="button" class="btn btn-warning inline pull-left" onclick="$.chatReconnect()" 
+        <button type="button" class="btn btn-warning inline pull-left" onclick="$.chatReconnect()"
         data-toggle="tooltip" title="Wiederverbinde PhantomBot mit deinem Twitch Kanal. Dies funktioniert nicht, wenn vorher die 'Entfernen' Aktion betätigt wurde.">Wiederverbinden</button>
 
         <button type="button" class="btn btn-primary inline pull-left" onclick="$.toggleTwitchChat()">Chat An/Aus</button>
@@ -257,7 +256,7 @@
                  <div class="form-group" onkeypress="return event.keyCode != 13">
                     <label for="multi-link">Erforderliche Nachrichten</label>
                     <button type="button" class="btn btn-primary pull-right" onclick="$.setMultiReqMsgs('#multiLinkReqMsgsInput', 'reqMessages')">Übermitteln</button>
-                    <input type="text" class="form-control" id="multiLinkReqMsgsInput" placeholder="Anzahl" 
+                    <input type="text" class="form-control" id="multiLinkReqMsgsInput" placeholder="Anzahl"
                         data-toggle="tooltip" title="Lege die erforderliche Anzahl an Nachrichten fest, welche vor dem senden eines Multi-Link nötig sind." />
                 </div>
             </form>

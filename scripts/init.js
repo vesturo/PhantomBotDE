@@ -358,6 +358,11 @@
 
             // Load the other discord modules
             loadScriptRecursive('./discord');
+            // Mark that we are using Discord.
+            // This is used by the new panel.
+            $.inidb.set('panelData', 'hasDiscord', 'true');
+        } else {
+            $.inidb.set('panelData', 'hasDiscord', 'false');
         }
 
         // Load new panel handler.
@@ -659,20 +664,6 @@
          */
         $api.on($script, 'streamLabsDonationInitialized', function(event) {
             callHook('streamLabsDonationInitialized', event, false);
-        });
-
-        /*
-         * @event streamTipDonation
-         */
-        $api.on($script, 'streamTipDonation', function(event) {
-            callHook('streamTipDonation', event, false);
-        });
-
-        /*
-         * @event streamTipDonationInitialized
-         */
-        $api.on($script, 'streamTipDonationInitialized', function(event) {
-            callHook('streamTipDonationInitialized', event, false);
         });
 
         /*

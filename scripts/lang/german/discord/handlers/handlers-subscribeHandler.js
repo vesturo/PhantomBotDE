@@ -10,3 +10,6 @@ $.lang.register('discord.subscribehandler.resub.message.usage', 'Verwendung: !su
 $.lang.register('discord.subscribehandler.resub.message.set', 'Re-Abonnementbenachrichtigungsnachricht wurde festgelegt zu: $1');
 $.lang.register('discord.subscribehandler.channel.usage', 'Verwendung: !subscribehandler channel [Kanalname]');
 $.lang.register('discord.subscribehandler.channel.set', 'Abonnementbenachrichtigungen werden nun im Kanal #$1 ausgegeben!');
+$.lang.register('discord.subscribehandler.resubscriber.embedtitle', "New Resubscriber!");
+$.lang.register('discord.subscribehandler.subscriber.embedtitle', "New Subscriber!");
+$.lang.register('discord.subscribehandler.primesubscriber.embedtitle', "New Prime Subscriber!");
