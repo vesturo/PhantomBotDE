@@ -12,7 +12,7 @@
      */
     function deathUpdateFile(game) {
         var deathFile = './addons/deathctr/deathctr.txt',
-            deathCounter = parseInt($.inidb.get('deahts', game));
+            deathCounter = parseInt($.inidb.get('deaths', game));
 
         if (!$.isDirectory('./addons/deathctr/')) {
             $.mkDir('./addons/deathctr');
@@ -82,7 +82,7 @@
                  */
                 if (action.equalsIgnoreCase('add') || action.equalsIgnoreCase('incr') || action.equalsIgnoreCase('+')) {
 
-                    $.say($.lang.get('deathcounter.add-success', $.ownerName, game, ($.inidb.exists('deaths', game) ? (parseInt($.inidb.get('deaths', game)) + 1) : 0)));
+                    $.say($.lang.get('deathcounter.add-success', $.ownerName, game, ($.inidb.exists('deaths', game) ? (parseInt($.inidb.get('deaths', game)) + 1) : 1)));
                     $.inidb.incr('deaths', game, 1);
                     $.deathUpdateFile(game);
                     return;
@@ -121,7 +121,7 @@
         $.registerChatSubcommand('deathctr', 'decr', 2);
         $.registerChatSubcommand('deathctr', '-', 2);
 
-        setTimeout(function() {
+        setInterval(function() {
             deathUpdateFile(($.getGame($.channelName) != '' ? $.getGame($.channelName) : 'Some Game'));
         }, 10000);
     });

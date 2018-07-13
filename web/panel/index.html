@@ -21,7 +21,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="ISO-8859-15">
+        <meta charset="UTF-8">
 
         <title>PhantomBot Control Panel</title>
 
@@ -238,7 +238,7 @@
             </div>
             <!-- <span id="iframeLoader"><i style="color: purple" class="fa fa-spinner fa-spin fa-5x"></i><br><br>Loading Twitch Chat</span> -->
              <script>
-                (function($) {
+                $(function() {
                     var toggle = localStorage.getItem('phantombot_chattoggle');
 
                     if (toggle === 'false') {
@@ -247,9 +247,9 @@
                     }
 
                     $("#chatsidebar").append("<iframe id=\"chat\" frameborder=\"0\" scrolling=\"no\" onload=\"hideLoadingImage()\"" +
-                                             "src=\"https://www.twitch.tv/embed/" + getChannelName().toLowerCase() + "/chat?popout=\">");
+                                             "src=\"https://www.twitch.tv/embed/" + getChannelName().toLowerCase() + "/chat\">");
                     $("#chatsidebar").draggable({ iframeFix: true });
-                })(jQuery);
+                });
             </script>
         </div>
 

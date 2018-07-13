@@ -238,7 +238,7 @@
             videoId = data[0];
             videoTitle = data[1];
 
-            if (videoTitle.equalsIgnoreCase('video ist Privat') || videoTitle.equalsIgnoreCase('keine Passenden Videos gefunden')) {
+            if (videoTitle.equalsIgnoreCase('Video ist Privat') || videoTitle.equalsIgnoreCase('keine Passenden Videos gefunden')) {
                 throw videoTitle;
             }
 
