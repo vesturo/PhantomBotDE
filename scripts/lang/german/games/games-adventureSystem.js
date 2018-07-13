@@ -17,6 +17,7 @@ $.lang.register('adventuresystem.start.success', '$1 versucht ein Team für ein 
 $.lang.register('adventuresystem.tamagotchijoined', '$1 tritt auch dem Abenteuer bei.');
 $.lang.register('adventuresystem.top5', 'Die Top 5 Abenteurer sind: $1.');
 $.lang.register('adventuresystem.top5.empty', 'Es wurden noch keine Abenteuer Gewinner verzeichnet.');
+$.lang.register('adventuresystem.reset', 'The adventure has now cooled off! Use "!adventure [$1]" to start a new adventure!');
 
 
 $.lang.register('adventuresystem.stories.1.title', 'Schatz im Schwarzsee');

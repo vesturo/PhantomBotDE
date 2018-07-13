@@ -8,6 +8,7 @@ $.lang.register('customcommands.alias.delete.success', 'Der Alias, !$1, wurde er
 $.lang.register('customcommands.alias.delete.usage', 'Verwendung: !delalias (Aliasname)');
 $.lang.register('customcommands.alias.error', 'Für, !$1, existiert bereits ein Alias. Lösche ihn vorher.');
 $.lang.register('customcommands.alias.error.target404', 'Der Ziel-Befehl existiert nicht!');
+$.lang.register('customcommands.alias.error.exists', 'The command you want to alias to already exists.');
 $.lang.register('customcommands.add.disabled', 'Dieser Befehl ist aktuell deaktiviert. Lösche ihn um einen neuen hinzuzufügen oder reaktiviere ihn.');
 $.lang.register('customcommands.alias.success', 'Alias !$2 wurde erfolgreich für Befehl, !$1, erstellt!');
 $.lang.register('customcommands.alias.usage', 'Verwendung: !aliascom (Aliasname) (existierender Befehl) [Optionale Parameter]');
@@ -42,6 +43,10 @@ $.lang.register('customcommands.enable.usage', 'Verwendung: !enablecom (Befehl)'
 $.lang.register('customcommands.enable.404', 'Dieser Befehl existiert nicht!');
 $.lang.register('customcommands.enable.err', 'Dieser Befehl ist bereits aktiviert!');
 $.lang.register('customcommands.enable.success', 'Der Befehl, !$1, wurde reaktiviert.');
+$.lang.register('customcommands.reset.usage', 'Usage: !resetcom (command) (count). If no (count) then reset to 0.');
+$.lang.register('customcommands.reset.success', 'The counter for !$1 has been reset.');
+$.lang.register('customcommands.reset.change.fail', 'Invalid counter value: $1');
+$.lang.register('customcommands.reset.change.success', 'The counter for !$1 has been set to $2.');
 $.lang.register('customcommands.botcommands', 'Befehle: $1');
 $.lang.register('customcommands.botcommands.error', 'Gib eine Zahl ein um eine Seite zu finden.');
 $.lang.register('customcommands.botcommands.total', 'Seiten gesamt: $1 [Siehe auch: https://phantombot.tv/commands]');

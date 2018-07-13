@@ -27,76 +27,15 @@
         <div id="_editCustomCommandsPanelDisabled" />
     <div id="_editCustomCommandsPanel">
 
-        <div id="tagHelpDialog" title="Benutzerdefinierte Befehls-Tags" style="font-size: 90%">
-            <table>
-                <tr>
-                    <td>(sender) </td><td> BenutzerIn der/die den Befehl auslöste.<td>
-                    </tr><tr>
-                    <td>(@sender) </td><td> BenutzerIn der/die den Befehl ausgelöst hat und es wird ein @ Zeichen seinem/ihrem Namen hinzugefügt.<td>
-                    </tr><tr>
-                    <td>(baresender) </td><td> BenutzerIn der/die den Befehl auslöste, in Kleinbuchstaben.<td>
-                    </tr><tr>
-                    <td>(touser) </td><td> Ersetzt mit dem Argument, welches nach dem Befehl gesagt wird. Wenn danach nichts angegeben wird, dann ist es der/die BenutzerIn der/die den Befehl auslöst.<td>
-                    </tr><tr>
-                    <td>(#) </td><td> Zufällige Nummer<td>
-                    </tr><tr>
-                    <td>(1), (2), (3) etc </td><td> Befehlsargumente<td>
-                    </tr><tr>
-                    <td>(age) </td><td> Zeigt an, wie lange du schon auf Twitch bist.<td>
-                    </tr><tr>
-                    <td>(random) </td><td> Zufällige Person im Chat.<td>
-                    </tr><tr>
-                    <td>(pointname) </td><td> Aktueller Punktename.<td>
-                    </tr><tr>
-                    <td>(uptime) </td><td> Aktuelle Streamlaufzeit.<td>
-                    </tr><tr>
-                    <td>(game) </td><td> Aktuelles Spiel auf dem Kanal.<td>
-                    </tr><tr>
-                    <td>(status) </td><td> Aktueller Kanaltitel.<td>
-                    </tr><tr>
-                    <td>(price) </td><td> Aktueller Befehlspreis. (Zuschauer & Stammzuschauer)<td>
-                    </tr><tr>
-                    <td>(pay) </td><td> Aktuelle Kosten eines Befehls. (Mods)<td>
-                    </tr><tr>
-                    <td>(onlineonly) </td><td> Befehl ist nur ausführbar, wenn Stream online ist.<td>
-                    </tr><tr>
-                    <td>(offlineonly) </td><td> Befehl ist nur ausführbar, wenn Stream offline ist.<td>
-                    </tr><tr>
-                    <td>(viewers) </td><td> Aktuelle Zuschauerzahl.<td>
-                    </tr><tr>
-                    <td>(count) </td><td> Zeit, die der Befehl bereits verwendet wurde.<td>
-                    </tr><tr>
-                    <td>(echo) </td><td> Sagt jede Nachricht als Bot.<td>
-                    </tr><tr>
-                    <td>(1=) </td><td> Argument 1. Füge ein Argument nach dem = ein. Für wen, wenn das Argument leer ist.<td>
-                    </tr><tr>
-                    <td>(countdown=) </td><td> Füge das Datum ein, zu dem du herunterzählen willst. Beispiel: (countdown=März 11 1978 12:15).<td>
-                    </tr><tr>
-                    <td>(downtime) </td><td> Zeit seit dem letzten Stream.<td>
-                    </tr><tr>
-                    <td>(readfile filename.txt) </td><td> Liest, was in der Datei steht. Die Datei muss im addons Ordner des Bots liegen.<td>
-                    </tr><tr>
-                    <td>(customapijson URL key | {literal string} ...) </td>
-                    <td> Rufe eine Remote-URL auf, die JSON zurückgibt. key oder object.key oder object.object.key für Zugriff auf JSON-Daten.
-                    </tr><tr>
-                    <td>(command [command_name]) </td><td> Befehl aufrufen. Muss das erste Element im benutzerdefinierten Befehl sein. Inkludiere kein ! vor command_name!</td>
-                    </tr><tr>
-                    <td>(customapi [requesturl]) </td><td> Eine Remote-URL aufrufen.<td>
-                </tr>
-            </table>
-        </div>
-
         <div>
-            <button type="button" class="btn btn-primary btn-xs inline pull-right"
-                     onclick="$('#tagHelpDialog').dialog('open')"><small>Befehlsvariablen</small></button>
+            <button type="button" class="btn btn-primary btn-xs inline pull-right" onclick="window.open('https://community.phantombot.tv/t/command-variables')"><small>Befehlsvariablen</small></button>
             <br><br>
         </div>
     </div>
-
         <form role="form">
             <div class="form-group" onkeypress="return event.keyCode != 13">
                 <label for="runCustomCommand">Befehl ausführen</label>
-                <button type="button" class="btn btn-primary inline pull-right" onclick="$.runCommand()">Ausführen</button>
+                <button type="button" class="btn btn-primary inline pull-right" onclick="$.runCustomCommand()">Ausführen</button>
                 <input type="text" class="form-control" id="commandImput" placeholder="Name des Befehls" />
             </div>
         </form>
@@ -151,7 +90,18 @@
     </div>
     </div>
 
-    <h3>Vergütung</h3>
+    <h3>Count</h3>
+    <div>
+    <div id="_commandCountersPanelDisabled" />
+    <div id="_commandCountersPanel">
+        <strong>Current Command Count</strong>
+        <br>
+        <br>
+        <div id="countCommandsList" style="height: 200px; overflow: auto;" />
+    </div>
+    </div>
+
+    <h3>Payment</h3>
     <div>
     <div id="_commandPayPanelDisabled" />
     <div id="_commandPayPanel">

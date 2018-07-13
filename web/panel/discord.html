@@ -327,7 +327,6 @@
         </form>
     </div>
 
-
     <h3>TipeeeStream Benachrichtigungs Einstellungen</h3>
     <div>
     <div id="_discord_tipeeeStreamHandlerDisabled" />
@@ -389,48 +388,9 @@
 
         <form role="form">
             <div class="form-group" onkeypress="return event.keyCode != 13">
-                <label for="streamElementsMessageInput">Spendennachricht</label>
-                <button type="button" class="btn btn-primary inline pull-right" onclick="$.updateDiscordTable('streamelementsMessageInput', 'handlers/streamElementsHandler.js', 'discordSettings', 'streamelementsMessage')">Übermitteln</button>
+                <label for="streamElementsMessageInput">Spendennachricht</labelfor>
+                <button type="button" class="btn btn-primary inline pull-right" onclick="$.updateDiscordTable('streamelementsMessageInput', 'handlers/streamElementsHandler.js', 'discordSettings', 'streamtipMessage')">Übermitteln</button>
                 <input type="text" class="form-control" id="streamelementsMessageInput" placeholder="Spendennachricht" data-toggle="tooltip"
-                    title="Lege eine Spendennachricht für StreamElements fest. Verfügbare Tags: (name), (currency), (amount), (message)"/>
-            </div>
-        </form>
-
-        <form role="form">
-            <div class="form-group" onkeypress="return event.keyCode != 13">
-                <label for="streamElementsChannelInput">Alarm Kanal</label>
-                <button type="button" class="btn btn-primary inline pull-right" onclick="$.updateDiscordTable('streamelementsChannelInput', 'handlers/streamElementsHandler.js', 'discordSettings', 'streamelementsChannel')">Übermitteln</button>
-                <input type="text" class="form-control" id="streamelementsChannelInput" placeholder="Kanalname" data-toggle="tooltip" title="Lege den Kanal fest, für den Ankündigungen für dieses Modul erstellt werden sollen."/>
-            </div>
-        </form>
-    </div>
-    </div>
-
-    <h3>StreamTip Benachrichtigungs Einstellungen</h3>
-    <div>
-    <div id="_discord_streamTipHandlerDisabled" />
-    <div id="_discord_streamTipHandler">
-        <table>
-            <tr class="textList">
-                <td>StreamTip Benachrichtigungen An/Aus</td>
-                <td style="width: 25px"><div id="streamtipToggleInput" /></td>
-                <td style="width: 25px">
-                    <div data-toggle="tooltip" title="Aktivieren" class="button" onclick="$.updateDiscordTable('streamtipToggleInput', 'handlers/streamtipHandler.js', 'discordSettings', 'streamtipToggle', 'true')">
-                        <i class="fa fa-circle" /></div>
-                </td>
-                <td style="width: 25px">
-                    <div data-toggle="tooltip" title="Deaktivieren" class="button" onclick="$.updateDiscordTable('streamtipToggleInput', 'handlers/streamtipHandler.js', 'discordSettings', 'streamtipToggle', 'false')">
-                        <i class="fa fa-circle-o" /></div>
-                </td>
-            </tr>
-        </table>
-        <br>
-
-        <form role="form">
-            <div class="form-group" onkeypress="return event.keyCode != 13">
-                <label>Spendennachricht</label>
-                <button type="button" class="btn btn-primary inline pull-right" onclick="$.updateDiscordTable('streamtipMessageInput', 'handlers/streamtipHandler.js', 'discordSettings', 'streamtipMessage')">Übermitteln</button>
-                <input type="text" class="form-control" id="streamtipMessageInput" placeholder="Spendennachricht" data-toggle="tooltip"
                     title="Lege eine Spendennachricht für StreamTip Spenden fest. Verfügbare Tags: (name), (currency), (amount), und (message)"/>
             </div>
         </form>
@@ -542,8 +502,8 @@
         <form role="form">
             <div class="form-group" onkeypress="return event.keyCode != 13">
                 <label>Benachrichtigungskanal</label>
-                <button type="button" class="btn btn-primary inline pull-right" onclick="$.updateDiscordTable('greeetingsChannelInput', 'systems/greetingsSystem.js', 'discordSettings', 'greetingsChannel')">Übermitteln</button>
-                <input type="text" class="form-control" id="greeetingsChannelInput" placeholder="Kanalname" data-toggle="tooltip" title="Lege den Kanal fest, indem die Ankündigungen für dieses Modul gemacht werden sollen."/>
+                <button type="button" class="btn btn-primary inline pull-right" onclick="$.updateDiscordTable('greetingsChannelInput', 'systems/greetingsSystem.js', 'discordSettings', 'greetingsChannel')">Übermitteln</button>
+                <input type="text" class="form-control" id="greetingsChannelInput" placeholder="Kanalname" data-toggle="tooltip" title="Lege den Kanal fest, indem die Ankündigungen für dieses Modul gemacht werden sollen."/>
             </div>
         </form>
     </div>
@@ -591,7 +551,7 @@
                     <div data-toggle="tooltip" title="Aktivieren" class="button" onclick="$.updateDiscordTable('botGameToggleInput', 'handlers/streamHandler.js', 'discordSettings', 'botGameToggle', 'true')"><i class="fa fa-circle" /></div>
                 </td>
                 <td style="width: 25px">
-                    <div data-toggle="tooltip" title="Deaktivieren" class="button" onclick="$.updateDiscordTable('botgameToggleInput', 'handlers/streamHandler.js', 'discordSettings', 'botgameToggle', 'false')"><i class="fa fa-circle-o" /></div>
+                    <div data-toggle="tooltip" title="Deaktivieren" class="button" onclick="$.updateDiscordTable('botGameToggleInput', 'handlers/streamHandler.js', 'discordSettings', 'botGameToggle', 'false')"><i class="fa fa-circle-o" /></div>
                 </td>
             </tr>
         </table>
@@ -620,7 +580,7 @@
                 <label>Spielwechselbenachrichtigungen</label>
                 <button type="button" class="btn btn-primary inline pull-right" onclick="$.updateDiscordTable('gameMessageInput', 'handlers/streamHandler.js', 'discordSettings', 'gameMessage')">Übermitteln</button>
                 <input type="text" class="form-control" id="gameMessageInput" placeholder="Spielwechselnachricht" data-toggle="tooltip"
-                    title="Lege eine Nachricht, für den Fall dass du dein Spiel wechselst, fest. Verfügbare Tags: (title), (game), (url), (name), (uptime) und (follows)"/>
+                    title="Lege eine Nachricht, für den Fall dass du dein Spiel wechselst, fest. Verfügbare Tags: (title)"/>
             </div>
         </form>
 
@@ -953,7 +913,8 @@
             <div class="form-group" onkeypress="return event.keyCode != 13">
                 <label>Clips Benachrichtugungen</label>
                 <button type="button" class="btn btn-primary inline pull-right" onclick="$.updateDiscordTable('clipsMessageInput', 'handlers/clipHandler.js', 'discordSettings', 'clipsMessage')">Übermitteln</button>
-                <input type="text" class="form-control" id="clipsMessageInput" placeholder="Clips Message" data-toggle="tooltip" title="Lege eine Nachricht für einen erkannten Clip fest. Verfügbare Tags: (name) (url)"/>
+                <input type="text" class="form-control" id="clipsMessageInput" placeholder="Clips Message"
+                       data-toggle="tooltip" title="Lege eine Nachricht für einen erkannten Clip fest. Verfügbare Tags: (name) (url) und (embedurl) welcher den Clip einbindet. "/>
             </div>
         </form>
 

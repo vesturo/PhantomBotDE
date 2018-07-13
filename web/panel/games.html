@@ -165,11 +165,7 @@
         </div>
         </div>
         
-        <div id="betResults" /></br>
-        
-        <div>
-        <p>Befehl um eine Wette abzugeben: <b>!bet [Einsatz] [Option]</b></p>
-        </div>
+        <div id="betResults" />
     </div>
     </div>
 
@@ -184,11 +180,7 @@
                         onclick="$.rouletteTimeout()">Übermitteln</button>
                 <input type="number" min="0" class="form-control" id="rouletteTimeoutInput" placeholder="Sekunden">
             </div>
-        </form></br>
-        
-        <div>
-        <p>Befehl um eine Runde Roulette zu starten: <b>!roulette</b></p>
-        </div>
+        </form>
     </div>
     </div>
 
@@ -294,11 +286,7 @@
                         onclick="$.adventureUpdateSetting('maxBet')">Übermitteln</button>
                 <input type="number" min="1" class="form-control" id="adventuremaxBetInput" placeholder="Zahlenwert">
             </div>
-        </form></br>
-        
-        <div>
-        <p>Befehl um einem Abenteuer beizutreten: <b>!adventure [Einsatz]</b></p>
-        </div>
+        </form>
     </div>    
     </div>    
 
@@ -311,15 +299,15 @@
             <div class="form-group" onkeypress="return event.keyCode != 13">
                 <button type="button" class="btn btn-primary inline pull-right" 
                         onclick="$.setSlotRewards()">Übermitteln</button>
-                <input style="width: 10%" type="number" min="0" id="slotRewards0Input" placeholder="Punkte"
+                <input style="width: 10%" type="number" min="0" class="input-control" id="slotRewards0Input" placeholder="Punkte"
                        data-toggle="tooltip" title="Punkte für ersten Wert">
-                <input style="width: 10%" type="number" min="0" id="slotRewards1Input" placeholder="Punkte"
+                <input style="width: 10%" type="number" min="0" class="input-control" id="slotRewards1Input" placeholder="Punkte"
                        data-toggle="tooltip" title="Punkte für zweiten Wert">
-                <input style="width: 10%" type="number" min="0" id="slotRewards2Input" placeholder="Punkte"
+                <input style="width: 10%" type="number" min="0" class="input-control" id="slotRewards2Input" placeholder="Punkte"
                        data-toggle="tooltip" title="Punkte für dritten Wert">
-                <input style="width: 10%" type="number" min="0" id="slotRewards3Input" placeholder="Punkte"
+                <input style="width: 10%" type="number" min="0" class="input-control" id="slotRewards3Input" placeholder="Punkte"
                        data-toggle="tooltip" title="Punkte für vierten Wert">
-                <input style="width: 10%" type="number" min="0" id="slotRewards4Input" placeholder="Punkte"
+                <input style="width: 10%" type="number" min="0" class="input-control" id="slotRewards4Input" placeholder="Punkte"
                        data-toggle="tooltip" title="Punkte für fünften Wert">
             </div>
         </form>
@@ -328,22 +316,18 @@
             <div class="form-group" onkeypress="return event.keyCode != 13">
                 <button type="button" class="btn btn-primary inline pull-right" 
                         onclick="$.setSlotEmotes()">Übermitteln</button>
-                <input style="width: auto" type="text" id="slotEmotes0Input" placeholder="Emote"
+                <input style="width: auto" type="text" class="input-control" id="slotEmotes0Input" placeholder="Emote"
                        data-toggle="tooltip" title="Emote für ersten Wert">
-                <input style="width: auto" type="text" id="slotEmotes1Input" placeholder="Emote"
+                <input style="width: auto" type="text" class="input-control" id="slotEmotes1Input" placeholder="Emote"
                        data-toggle="tooltip" title="Emote für zweiten Wert">
-                <input style="width: auto" type="text" id="slotEmotes2Input" placeholder="Emote"
+                <input style="width: auto" type="text" class="input-control" id="slotEmotes2Input" placeholder="Emote"
                        data-toggle="tooltip" title="Emote für dritten Wert">
-                <input style="width: auto" type="text" id="slotEmotes3Input" placeholder="Emote"
+                <input style="width: auto" type="text" class="input-control" id="slotEmotes3Input" placeholder="Emote"
                        data-toggle="tooltip" title="Emote für vierten Wert">
-                <input style="width: auto" type="text" id="slotEmotes4Input" placeholder="Emote"
+                <input style="width: auto" type="text" class="input-control" id="slotEmotes4Input" placeholder="Emote"
                        data-toggle="tooltip" title="Emote für fünften Wert">
             </div>
-        </form></br>
-        
-        <div>
-        <p>Befehl um eine Runde am Spielautomaten zu spielen: <b>!slot</b></p>
-        </div>
+        </form>
     </div>
     </div>
 
@@ -356,24 +340,20 @@
             <div class="form-group" onkeypress="return event.keyCode != 13">
                 <button type="button" class="btn btn-primary inline pull-right" 
                         onclick="$.setRollRewards()">Übermitteln</button>
-                <input style="width: 10%" type="number" min="0" id="rollRewards0Input" placeholder="Punkte"
+                <input style="width: 10%" type="number" min="0" class="input-control" id="rollRewards0Input" placeholder="Punkte"
                        data-toggle="tooltip" title="Punkte für 1er Pasch">
-                <input style="width: 10%" type="number" min="0" id="rollRewards1Input" placeholder="Punkte"
+                <input style="width: 10%" type="number" min="0" class="input-control" id="rollRewards1Input" placeholder="Punkte"
                        data-toggle="tooltip" title="Punkte für 2er Pasch">
-                <input style="width: 10%" type="number" min="0" id="rollRewards2Input" placeholder="Punkte"
+                <input style="width: 10%" type="number" min="0" class="input-control" id="rollRewards2Input" placeholder="Punkte"
                        data-toggle="tooltip" title="Punkte für 3er Pasch">
-                <input style="width: 10%" type="number" min="0" id="rollRewards3Input" placeholder="Punkte"
+                <input style="width: 10%" type="number" min="0" class="input-control" id="rollRewards3Input" placeholder="Punkte"
                        data-toggle="tooltip" title="Punkte für 4er Pasch">
-                <input style="width: 10%" type="number" min="0" id="rollRewards4Input" placeholder="Punkte"
+                <input style="width: 10%" type="number" min="0" class="input-control" id="rollRewards4Input" placeholder="Punkte"
                        data-toggle="tooltip" title="Punkte für 5er Pasch">
-                <input style="width: 10%" type="number" min="0" id="rollRewards5Input" placeholder="Punkte"
+                <input style="width: 10%" type="number" min="0" class="input-control" id="rollRewards5Input" placeholder="Punkte"
                        data-toggle="tooltip" title="Punkte für 6er Pasch">
             </div>
-        </form></br>
-        
-        <div>
-        <p>Befehl um die Würfel rollen zu lassen: <b>!roll</b></p>
-        </div>
+        </form>
     </div>
     </div>
 
@@ -401,7 +381,7 @@
             <div class="form-group" onkeypress="return event.keyCode != 13">
                 <label for="gamblingWinPercent2">Gewinnchance in Prozent</label>
                 <button type="button" class="btn btn-primary inline pull-right" onclick="$.gambling('WinPercent')">Übermitteln</button>
-                <input type="number" min="1" class="form-control" id="gamblingWinPercent" placeholder="Zahlenwert"
+                <input type="number" min="1" class="form-control" id="gamblingWinPercent" placeholder="Zahlenwert" data-toggle="tooltip"
                         title="Prozentuale Angabe von Punkten, welche die SpielerInnen gewinnen können. Max. ist 100%." >
             </div>
         </form>
@@ -410,14 +390,10 @@
             <div class="form-group" onkeypress="return event.keyCode != 13">
                 <label for="gamblingWinRange2">Gewinnspanne</label>
                 <button type="button" class="btn btn-primary inline pull-right" onclick="$.gambling('WinRange')">Übermitteln</button>
-                <input type="number" min="1" class="form-control" id="gamblingWinRange" placeholder="Spanne"
+                <input type="number" min="1" class="form-control" id="gamblingWinRange" placeholder="Spanne" data-toggle="tooltip"
                         title="Bereich in dem die SpielerInnen gewinnen können, alles unter der hier angegebenen Nummer ist ein Verlust. Max. ist 100." >
             </div>
-        </form></br>
-        
-        <div>
-        <p>Befehl um das Glücksspiel zu starten: <b>!gamble [Einsatz]</b></p>
-        </div>
+        </form>
     </div>
 </div>
 </div>

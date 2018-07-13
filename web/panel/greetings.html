@@ -157,65 +157,6 @@
     </div>
     </div>
 
-    <h3>StreamTip Einstellungen</h3>
-    <div>
-    <div id="_streamtipdonationAlertsPanelDisabled" />
-    <div id="_streamtipdonationAlertsPanel">
-        <table>
-            <tr class="textList">
-                <td>Spenden Benachrichtigungen An/Aus</td>
-                <td style="width: 25px"><div id="streamtipGreetings" /></td>
-                <td style="width: 25px">
-                    <div data-toggle="tooltip" title="An/Aus" class="button"
-                         onclick="$.toggleGreetings('streamtip', 'announce');"><i class="fa fa-refresh" />
-                     </div>
-                </td>
-            </tr>
-
-            <tr class="textList">
-                <td>Spender-Beförderung An/Aus</td>
-                <td style="width: 25px"><div id="streamtipdonationGroup" /></td>
-                <td style="width: 25px">
-                    <div data-toggle="tooltip" title="An/Aus" class="button"
-                         onclick="$.toggleGreetings('streamtipdonationGroup', 'donationGroup');"><i class="fa fa-refresh" />
-                     </div>
-                </td>
-            </tr>
-        </table>
-        <br>
-
-        <form role="form">
-            <div class="form-group" onkeypress="return event.keyCode != 13">
-                <label for="streamtipdonateReward">Belohnungsmultiplikator</label>
-                <button type="button" class="btn btn-primary inline pull-right"
-                        onclick="$.updateGreetingData('streamtipdonateRewardInput', 'streamtip', 'reward')">Übermitteln</button>
-                <input data-toggle="tooltip" title="Punkt(e) für eine Einheit der gespendeten Währung. Kommazahlen (0.1) sind erlaubt."
-                       type="number" min="0" step="0.1" class="form-control" id="streamtipdonateRewardInput" placeholder="Punkte" />
-            </div>
-        </form>
-
-        <form role="form">
-            <div class="form-group" onkeypress="return event.keyCode != 13">
-                <label for="streamtipdonationGroupMin">Beförderungsbetrag</label>
-                <button type="button" class="btn btn-primary inline pull-right"
-                        onclick="$.updateGreetingData('streamtipdonationGroupMin', 'streamtip', 'donationGroupMin')">Übermitteln</button>
-                <input type="text" class="form-control" id="streamtipdonationGroupMin" placeholder="Betrag"
-                       data-toggle="tooltip" title="Minimaler Betrag den jemand Spenden muss."/>
-            </div>
-        </form>
-
-        <form role="form">
-            <div class="form-group" onkeypress="return event.keyCode != 13">
-                <label for="streamtipdonateGreeting">Nachricht</label>
-                <button type="button" class="btn btn-primary inline pull-right"
-                        onclick="$.updateGreetingData('streamtipdonateGreetingInput', 'streamtip', 'message')">Übermitteln</button>
-                <input type="text" class="form-control" id="streamtipdonateGreetingInput" placeholder="Spendennachricht"
-                       data-toggle="tooltip" title="Tags: (name) (amount) (points) (pointname) (message) (currency)"/>
-            </div>
-        </form>
-    </div>
-    </div>
-
     <h3>TipeeeStream Einstellungen</h3>
     <div>
     <div id="_tipeeeStreamDonationsPanelDisabled" />
@@ -428,8 +369,8 @@
         <form role="form">
             <div class="form-group" onkeypress="return event.keyCode != 13">
                 <label for="resubGreeting">Prime Abonnenten Nachricht</label>
-                <button type="button" class="btn btn-primary inline pull-right" 
-                        onclick="$.updateGreetingData('resubGreetingInput', 'subscribeHandler', 'resubscribeMessage')">Übermitteln</button>
+                <button type="button" class="btn btn-primary inline pull-right"
+                        onclick="$.updateGreetingData('resubGreetingInput', 'subscribeHandler', 'reSubscribeMessage')">Übermitteln</button>
                 <input type="text" class="form-control" id="resubGreetingInput" placeholder="Begrüßungsnachricht"
                        data-toggle="tooltip" title="Tags: (name) (reward) (plan) (months) (customemote)" />
             </div>
@@ -509,8 +450,8 @@
                 <label for="bitsMessage">Nachricht</label>
                 <button type="button" class="btn btn-primary inline pull-right"
                         onclick="$.updateGreetingData('bitsMessage', 'bitsSettings', 'message')">Übermitteln</button>
-                <input type="text" class="form-control" id="bitsMessage" placeholder="Nachricht" 
-                       data-toggle="tooltip" title="Tags: (name) (reward) (amount)"/>
+                <input type="text" class="form-control" id="bitsMessage" placeholder="Nachricht"
+                       data-toggle="tooltip" title="Tags: (name) (amount) (message)"/>
             </div>
         </form>
 
@@ -549,7 +490,7 @@
                 <label for="gwSubGreeting">Abonnement Nachrichten</label>
                 <button type="button" class="btn btn-primary inline pull-right"
                         onclick="$.updateGreetingData('gwSubGreetingInput', 'gameWispSubHandler', 'subscribeMessage')">Übermitteln</button>
-                <input type="text" class="form-control" id="gwSubGreetingInput" placeholder="Begrüßungsnachricht" 
+                <input type="text" class="form-control" id="gwSubGreetingInput" placeholder="Begrüßungsnachricht"
                        data-toggle="tooltip" title="Tags: (name) (tier) (reward)"/>
             </div>
         </form>
