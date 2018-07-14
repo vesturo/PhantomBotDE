@@ -41,7 +41,7 @@
             return;
         }
 
-        $.consoleLn('>> Enabling hosts announcements');
+        $.consoleLn('>> Aktiviere Host Ankündigungen');
         announceHosts = true;
     });
 
