@@ -50,7 +50,7 @@
             keyword: keyword,
             time: time
         });
-        $.consoleDebug('Pushed keyword ' + keyword + ' to cooldown.');
+        $.consoleDebug('Das Keyword ' + keyword + ' wurde in die Abklingzeit gesetzt.');
     };
 
     /**

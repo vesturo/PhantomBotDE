@@ -753,7 +753,7 @@
     $.bind('ircPrivateMessage', function(event) {
         var sender = event.getSender().toLowerCase(),
             message = event.getMessage().toLowerCase().trim(),
-            modMessageStart = 'the moderators of this room are: ',
+            modMessageStart = 'die Moderatoren dieses Kanals sind: ',
             keys = $.inidb.GetKeyList('group', ''),
             subsTxtList = [],
             spl,

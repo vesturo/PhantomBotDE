@@ -56,6 +56,7 @@
             i;
 
         if (string === undefined) {
+            /* TODO: Übersetzten */
             $.log.warn('Lang string for key "' + key + '" was not found.');
             return '';
         }
