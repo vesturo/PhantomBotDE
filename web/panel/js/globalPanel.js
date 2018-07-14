@@ -133,11 +133,11 @@
                 if (msgObject['results']['newrelease_info'] !== undefined && msgObject['results']['newrelease_info'] !== null) {
                     var newVersionData = msgObject['results']['newrelease_info'].split('|'),
                         changeLog = 'https://github.com/PhantomBot/PhantomBot/releases/' + newVersionData[0];
-                    $('#newVersionDialog').html('Version <b>' + newVersionData[0] + '</b> of PhantomBot is now available for download! Review the changelog for details!<br><br>' +
+                    $('#newVersionDialog').html('Version <b>' + newVersionData[0] + '</b> für den englische PhantomBot verfügbar. <strong>(Unübersetzt)</strong><br><br>' +
                                                 '<b>Release Changelog:</b><br><a target="_blank" href="' + changeLog + '">' + changeLog + '</a><br><br>' +
                                                 '<b>Download Link:</b><br><a target="_blank" href="' + newVersionData[1] + '">' + newVersionData[1] + '</a><br><br>');
-                    $('#newVersionAvailable').html('<span class="yellowPill" data-toggle="tooltip" title="New Version Available! Click for more information."' +
-                                                   'onclick="$(\'#newVersionDialog\').dialog(\'open\')">New Version!</span>');
+                    $('#newVersionAvailable').html('<span class="yellowPill" data-toggle="tooltip" title="Neue Version verfügbar! Klicke hier für mehr Information."' +
+                                                   'onclick="$(\'#newVersionDialog\').dialog(\'open\')">Neue Version!</span>');
 
                 } else {
                     $('#newVersionAvailable').html('');
