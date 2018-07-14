@@ -2,9 +2,9 @@
  * This module is to handle subscriber notifications.
  */
 (function() {
-    var subMessage = $.getSetIniDbString('discordSettings', 'subMessage', '(name) just subscribed!'),
-        primeMessage = $.getSetIniDbString('discordSettings', 'primeMessage', '(name) just subscribed with Twitch Prime!'),
-        resubMessage = $.getSetIniDbString('discordSettings', 'resubMessage', '(name) just subscribed for (months) months in a row!'),
+    var subMessage = $.getSetIniDbString('discordSettings', 'subMessage', '(name) hat dich abonniert!'),
+        primeMessage = $.getSetIniDbString('discordSettings', 'primeMessage', '(name) hat dich über Twitch Prime abonniert!'),
+        resubMessage = $.getSetIniDbString('discordSettings', 'resubMessage', '(name) hat dich für (months) Monate hintereinander abonniert!'),
         subToggle = $.getSetIniDbBoolean('discordSettings', 'subToggle', false),
         primeToggle = $.getSetIniDbBoolean('discordSettings', 'primeToggle', false),
         resubToggle = $.getSetIniDbBoolean('discordSettings', 'resubToggle', false),
@@ -16,9 +16,9 @@
      */
     $.bind('webPanelSocketUpdate', function(event) {
         if (event.getScript().equalsIgnoreCase('./discord/handlers/subscribeHandler.js')) {
-            subMessage = $.getIniDbString('discordSettings', 'subMessage', '(name) just subscribed!');
-            primeMessage = $.getIniDbString('discordSettings', 'primeMessage', '(name) just subscribed with Twitch Prime!');
-            resubMessage = $.getIniDbString('discordSettings', 'resubMessage', '(name) just subscribed for (months) months in a row!');
+            subMessage = $.getIniDbString('discordSettings', 'subMessage', '(name) hat dich abonniert!');
+            primeMessage = $.getIniDbString('discordSettings', 'primeMessage', '(name) hat dich über Twitch Prime abonniert!');
+            resubMessage = $.getIniDbString('discordSettings', 'resubMessage', '(name) hat dich für (months) Monate hintereinander abonniert!');
             subToggle = $.getIniDbBoolean('discordSettings', 'subToggle', false);
             primeToggle = $.getIniDbBoolean('discordSettings', 'primeToggle', false);
             resubToggle = $.getIniDbBoolean('discordSettings', 'resubToggle', false);

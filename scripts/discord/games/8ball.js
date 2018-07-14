@@ -30,7 +30,7 @@
          */
         if (command.equalsIgnoreCase('8ball')) {
             if (action === undefined) {
-                $.discord.say(channel, $.discord.userPrefix(mention) + 'Usage: !8ball [question]');
+                $.discord.say(channel, $.discord.userPrefix(mention) + 'Nutzung: !8ball [question]');
                 return;
             }
 

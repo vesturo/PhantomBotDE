@@ -29,7 +29,7 @@
                         break;
                     }
                 } else {
-                    $.log.error('Failed to send keyword "' + keys[i] + '": ' + ex.message);
+                    $.log.error('Fehler beim senden des Schlagwortes "' + keys[i] + '": ' + ex.message);
                     break;
                 }
             }
