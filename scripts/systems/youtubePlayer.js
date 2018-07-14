@@ -232,7 +232,7 @@
 
             // Hit 5 trys and nothing was found
             if (data[0].length() < 11) {
-                throw 'No data returned.';
+                throw 'Keine Daten zurück gegeben.';
             }
 
             videoId = data[0];
@@ -969,8 +969,8 @@
 
                             jsonList['playlist'].push({ "song": videoId, "title": videoTitle, "duration": videoLength });
                         } catch (ex) {
-                            $.log.error('YouTube API Failed Lookup: Playlist [' + jsonList['playlistname'] +
-                                '] Index [' + playList[i] + '] YT ID [' + youTubeDbId + '] Error [' + ex + ']');
+                            $.log.error('YouTube API suche schlägt fehl: Playlist [' + jsonList['playlistname'] +
+                                '] Index [' + playList[i] + '] YT ID [' + youTubeDbId + '] Fehler [' + ex + ']');
                         }
                     }
                 }
