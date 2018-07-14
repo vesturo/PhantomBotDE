@@ -4,7 +4,7 @@
 
 [![GitHub license](https://img.shields.io/github/license/vesturo/PhantomBotDE.svg?style=for-the-badge)](https://github.com/vesturo/PhantomBotDE/blob/master/LICENSE)
 [![GitHub issues](https://img.shields.io/github/issues/vesturo/PhantomBotDE.svg?style=for-the-badge)](https://github.com/vesturo/PhantomBotDE/issues)
-![GitHub release](https://img.shields.io/github/release/qubyte/rubidium.svg?style=for-the-badge)
+![GitHub release](https://img.shields.io/github/release/vesturo/PhantomBotDE.svg?style=for-the-badge)
 
 # PhantomBot-German-Translation
 
