@@ -1,0 +1,10 @@
+$.lang.register('discord.cliphandler.toggle.off', 'Clip Benachrichtigungen wurden deaktiviert.');
+$.lang.register('discord.cliphandler.toggle.on', 'Clip Benachrichtigungen wurden aktiviert.');
+$.lang.register('discord.cliphandler.message.usage', 'Verwendung: !clipsmessage (Benachrichtigung) - Tags: (name), (url)');
+$.lang.register('discord.cliphandler.message.set', 'Benachrichtigungen für Clips wgeändert zu: $1.');
+$.lang.register('discord.cliphandler.channel.usage', 'Verwendung: !clipschannel (channel).  Currently: $1');
+$.lang.register('discord.cliphandler.channel.set', 'Benachrichtigungen für Clips werden in folgendem Channel gepostet: $1.');
+$.lang.register('discord.cliphandler.noclip', 'Kein Clip vorhanden');
+$.lang.register('discord.cliphandler.lastclip', 'Neuester Clip: $1');
+$.lang.register('discord.cliphandler.topclip', 'Clip des Tages: $1');
+$.lang.register('discord.cliphandler.clip.embedtitle', 'Neuer Clip!');
