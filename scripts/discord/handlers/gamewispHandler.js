@@ -3,7 +3,7 @@
  */
 (function() {
     var subMessage = $.getSetIniDbString('discordSettings', 'gamewispSubMessage', '(name) hat gerade über GameWisp auf dem Level (tier) abonniert!'),
-        resubMessage = $.getSetIniDbString('discordSettings', 'gamewispReSubMessage', '(name) hat gerade für (months) Monate über GameWisp abonniert!'),
+        resubMessage = $.getSetIniDbString('discordSettings', 'gamewispReSubMessage', '(name) hat gerade für (months) Monate hintereinander über GameWisp abonniert!'),
         tierMessage = $.getSetIniDbString('discordSettings', 'gamewispTierMessage', '(name) hat sich auf das Level (tier) bei GameWisp hochgestufft!'),
         channelName = $.getSetIniDbString('discordSettings', 'gamewispChannel', ''),
         subToggle = $.getSetIniDbBoolean('discordSettings', 'gamewispSubToggle', false),
