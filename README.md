@@ -1,4 +1,10 @@
+[![forthebadge](https://forthebadge.com/images/badges/built-by-neckbeards.svg)](https://forthebadge.com)
+[![forthebadge](https://forthebadge.com/images/badges/made-with-javascript.svg)](https://forthebadge.com)
+[![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
 
+[![GitHub license](https://img.shields.io/github/license/vesturo/PhantomBotDE.svg?style=for-the-badge)](https://github.com/vesturo/PhantomBotDE/blob/master/LICENSE)
+[![GitHub issues](https://img.shields.io/github/issues/vesturo/PhantomBotDE.svg?style=for-the-badge)](https://github.com/vesturo/PhantomBotDE/issues)
+![GitHub release](https://img.shields.io/github/release/qubyte/rubidium.svg?style=for-the-badge)
 
 # PhantomBot-German-Translation
 
@@ -10,9 +16,11 @@ Because this is the german translation I do not write more informations in engli
 
 # License Information
 
-This translation is licensed under the MIT-License+.
+This translation is licensed under GNU General Public License v3.0.
 
 "Read me" by X00LA, because it's a very good Readme with a nice tutorial
+
+Original Software is made by Phantombot.tv
 
 # Deutsche PhantomBot-Übersetzung
 
@@ -21,7 +29,7 @@ Ausgenommen der Lognachrichten ist alles übersetzt.
 Geändert wurde auch die Zeitzone von "GMT" zu "CET", Standardsprache von Englisch auf Deutsch, Videoplayer wurde auf das Format 16:9 geändert. Es wurden diverse weitere kleine Änderungen vorgenommen, aber diese sind nicht der Rede wert.
 Das Web Panel, der Youtube Player und der Playlist Viewer sind ebenfalls vollständig übersetzt worden.
 
-Ich habe bei der Übersetzung versucht, stets verständlich und klar zu übersetzen. Sollte der Eine oder Andere dennoch Probleme damit haben, bitte ich um Vorschläge wie ich es besser machen könnte. Ich bin ein Mensch und deshalb auch nicht vor Rechtschreibfehlern gefeit. Sollten welche gefunden werden, wäre ich dankbar, wenn ihr sie hier oder im <a href="https://community.phantombot.tv/topic/797/german-translation-github" target="_blank">PhantomBot Forum</a> anzeigt, damit ich sie beheben kann. Natürlich steht es auch jedem frei, sich an dem Projekt zu beteiligen.
+Ich habe bei der Übersetzung versucht, stets verständlich und klar zu übersetzen. Sollte der Eine oder Andere dennoch Probleme damit haben, bitte ich um Vorschläge wie ich es besser machen könnte. Ich bin ein Mensch und deshalb auch nicht vor Rechtschreibfehlern gefeit. Sollten welche gefunden werden, wäre ich dankbar, wenn ihr sie hier oder im <a href="https://community.phantombot.tv/t/phantombotde-volluebersetzung/3872" target="_blank">PhantomBot Forum</a> anzeigt, damit ich sie beheben kann. Natürlich steht es auch jedem frei, sich an dem Projekt zu beteiligen.
 
 Ich bitte auch um Verständnis, dass bei einer neuen Version des Bots, die Übersetzung erst ein paar Tage später erscheint.
 
@@ -45,4 +53,4 @@ An den beigefügten Scriptdateien wurde nichts anderes als die zu übersetzenden
 
 # Lizenzinformation
 
-Die Übersetzung ist unter der MIT-Lizenz lizensiert.
+Die Übersetzung ist unter der GNU General Public License v3.0 Lizensiert.
