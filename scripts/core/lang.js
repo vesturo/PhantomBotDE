@@ -15,7 +15,7 @@
      * @function load
      */
     function load(force) {
-        $.bot.loadScriptRecursive('./lang/german', true, (force ? force : false));
+        $.bot.loadScriptRecursive('./lang/deutsch', true, (force ? force : false));
         if (curLang != 'german') {
             $.bot.loadScriptRecursive('./lang/' + curLang, true, (force ? force : false));
         }
