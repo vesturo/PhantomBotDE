@@ -238,7 +238,7 @@
             videoId = data[0];
             videoTitle = data[1];
 
-            if (videoTitle.equalsIgnoreCase('Video ist Privat') || videoTitle.equalsIgnoreCase('keine Passenden Videos gefunden')) {
+            if (videoTitle.equalsIgnoreCase('video marked private') || videoTitle.equalsIgnoreCase('no search results found')) {
                 throw videoTitle;
             }
 
@@ -969,8 +969,8 @@
 
                             jsonList['playlist'].push({ "song": videoId, "title": videoTitle, "duration": videoLength });
                         } catch (ex) {
-                            $.log.error('YouTube API Failed Lookup: Playlist [' + jsonList['playlistname'] +
-                                '] Index [' + playList[i] + '] YT ID [' + youTubeDbId + '] Error [' + ex + ']');
+                            $.log.error('YouTube API suche schlägt fehl: Playlist [' + jsonList['playlistname'] +
+                                '] Index [' + playList[i] + '] YT ID [' + youTubeDbId + '] Fehler [' + ex + ']');
                         }
                     }
                 }

@@ -83,7 +83,7 @@
         $.inidb.set('emotecache', 'regexp_cache', newEmotesRegExpList.join(','));
 
         loaded = true;
-        $.consoleDebug("Built " + newEmotesRegExpList.length + " regular expressions for emote handling.");
+        $.consoleDebug("Baue " + newEmotesRegExpList.length + " regulären Ausdruck fürs Emote handling.");
         newEmotesRegExpList = [];
     }
 
@@ -105,7 +105,7 @@
         emotesRegExpList = new RegExp(newEmotesRegExpList.join('|'), 'g');
 
         loaded = true;
-        $.consoleDebug("Built " + newEmotesRegExpList.length + " regular expressions for emote handling from cache.");
+        $.consoleDebug("Baue " + newEmotesRegExpList.length + " regulären Ausdruck fürs Emote handling im Cache.");
         newEmotesRegExpList = [];
     }
 

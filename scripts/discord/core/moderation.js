@@ -28,7 +28,7 @@
      * @function reload
      */
     function reload() {
-        linkToggle = $.getSetIniDbBoolean('discordSettings', 'linkToggle', false),
+        linkToggle = $.getSetIniDbBoolean('discordSettings', 'linkToggle', false);
         linkPermit = $.getSetIniDbNumber('discordSettings', 'linkPermit', 60);
         capsToggle = $.getSetIniDbBoolean('discordSettings', 'capToggle', false);
         capsLimitPercent = $.getSetIniDbNumber('discordSettings', 'capsLimitPercent', 50);
@@ -62,7 +62,7 @@
         var keys = $.inidb.GetKeyList('discordWhitelist', ''),
             i;
 
-        whitelist = []
+        whitelist = [];
         for (i = 0; i < keys.length; i++) {
             whitelist.push(keys[i].toLowerCase());
         }
@@ -142,16 +142,16 @@
             obj = {},
             i;
 
-        obj['**Timeout_placed_on:**'] = '[' + username + '](https://twitch.tv/' + username.toLowerCase() + ')';
-        obj['**Creator:**'] = creator;
-        obj['**Reason:**'] = reason;
-        obj['**Time:**'] = time + ' seconds.';
+        obj['**Nutzer_gesperrt:**'] = '[' + username + '](https://twitch.tv/' + username.toLowerCase() + ')';
+        obj['**Ersteller:**'] = creator;
+        obj['**Grund:**'] = reason;
+        obj['**Zeit:**'] = time + ' Sekunden.';
 
         if (cbenniToggle) {
             obj['**Cbenni:**'] = '[https://cbenni.com/' + $.channelName + '?user=' + username.toLowerCase() + '](https://cbenni.com/' + $.channelName + '?user=' + username.toLowerCase() + ')';
         }
 
-        obj['**Last_message:**'] = (message.length() > 50 ? message.substring(0, 50) + '...' : message);
+        obj['**Letzte_Nachricht:**'] = (message.length() > 50 ? message.substring(0, 50) + '...' : message);
 
         var keys = Object.keys(obj);
         for (i in keys) {
@@ -175,10 +175,10 @@
             obj = {},
             i;
 
-        obj['**Ban_placed_on:**'] = '[' + username + '](https://twitch.tv/' + username.toLowerCase() + ')';
-        obj['**Creator:**'] = creator;
-        obj['**Reason:**'] = reason;
-        obj['**Last_message:**'] = (message.length() > 50 ? message.substring(0, 50) + '...' : message);
+        obj['**Nutzer_gebannt:**'] = '[' + username + '](https://twitch.tv/' + username.toLowerCase() + ')';
+        obj['**Ersteller:**'] = creator;
+        obj['**Grund:**'] = reason;
+        obj['**Letzte_Nachricht:**'] = (message.length() > 50 ? message.substring(0, 50) + '...' : message);
 
         var keys = Object.keys(obj);
         for (i in keys) {
@@ -217,7 +217,7 @@
             return;
         }
 
-        $.discordAPI.sendMessageEmbed(modLogChannel, 'green', '**Timeout removed from:** ' + '[' + username + '](https://twitch.tv/' + username.toLowerCase() + ')' + ' \r\n\r\n **Creator:** ' + creator);
+        $.discordAPI.sendMessageEmbed(modLogChannel, 'green', '**Nutzer entsperrt:** ' + '[' + username + '](https://twitch.tv/' + username.toLowerCase() + ')' + ' \r\n\r\n **Ersteller:** ' + creator);
     });
 
     /*
@@ -231,7 +231,7 @@
             return;
         }
 
-        $.discordAPI.sendMessageEmbed(modLogChannel, 'green', '**Ban removed from:** ' + '[' + username + '](https://twitch.tv/' + username.toLowerCase() + ')' + ' \r\n\r\n **Creator:** ' + creator);
+        $.discordAPI.sendMessageEmbed(modLogChannel, 'green', '**Ban entfernt von:** ' + '[' + username + '](https://twitch.tv/' + username.toLowerCase() + ')' + ' \r\n\r\n **Ersteller:** ' + creator);
     });
 
     /*

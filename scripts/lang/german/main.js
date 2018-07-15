@@ -143,8 +143,8 @@ $.lang.register('chatmoderator.fakepurge.message.usage', 'Verwendung: !moderatio
 $.lang.register('chatmoderator.fakepurge.message.set', 'Gefakte Reinigungen-Warnnachricht geändert zu: $1');
 $.lang.register('chatmoderator.blacklist.message.usage', 'Verwendung: !moderation blacklistmessage [Nachricht]');
 $.lang.register('chatmoderator.blacklist.message.set', 'Blacklist-Warnnachricht geändert zu: $1');
-$.lang.register('chatmoderator.blacklistban.message.usage', 'Usage: !moderation blacklistmessageban [message]');
-$.lang.register('chatmoderator.blacklistban.message.set', 'blacklist ban message set to: $1');
+$.lang.register('chatmoderator.blacklistban.message.usage', 'Verwendung: !moderation blacklistmessageban [Nachricht]');
+$.lang.register('chatmoderator.blacklistban.message.set', 'Blacklist Ban Nachricht geändert zu: $1');
 $.lang.register('chatmoderator.permit.time.usage', 'Verwendung: !moderation permittime [Zeit]');
 $.lang.register('chatmoderator.permit.time.set', 'Link-Erlaubnis-Zeitspanne geändert zu: $1 seconds.');
 $.lang.register('chatmoderator.caps.limit.usage', 'Verwendung: !moderation capslimit [Anzahl in Prozent]');
@@ -167,7 +167,7 @@ $.lang.register('chatmoderator.emotes.limit.usage', 'Verwendung: !moderation emo
 $.lang.register('chatmoderator.emotes.limit.set', 'Emotes-Limit geändert zu: $1 Emotes');
 $.lang.register('chatmoderator.permit.usage', 'Verwendung: !permit [Benutzername]');
 $.lang.register('chatmoderator.permited', ' hat nun die Erlaubnis innerhalb der nächsten $1 Sekunden einen Link zu posten!');
-$.lang.register('chatmoderator.blacklist.usage', 'Verwendung: !blackList [add / remove]');
+$.lang.register('chatmoderator.blacklist.usage', 'Verwendung: !blacklist [add / remove]');
 $.lang.register('chatmoderator.blacklist.add.usage', 'Verwendung: !blackList add (Nachricht)');
 $.lang.register('chatmoderator.blacklist.added', 'Wort der Blacklist hinzugefügt.');
 $.lang.register('chatmoderator.blacklist.remove.usage', 'Verwendung: !blackList remove (ID)');
@@ -259,7 +259,7 @@ $.lang.register('console.received.subscriberonly.end', 'Nachricht von jtv über 
 $.lang.register('console.received.subscriberonly.start', 'Nachricht von jtv über den Start des Nur-Abonnenten-Modus erhalten.');
 $.lang.register('cooldown.set.togglemodcooldown', 'Befehlsabklingzeit für Moderatoren wurde $1.');
 $.lang.register('cooldown.coolcom.usage', 'Verwendung: !coolcom [Befehl] [Sekunden] [Typ (global / user)] - Verwende -1 für die Sekunden um die Abklingzeit zu entfernen');
-$.lang.register('cooldown.coolcom.err', 'The minimum cooldown that can be set is 5 seconds.');
+$.lang.register('cooldown.coolcom.err', 'Der unveränderbare Minimal Cooldown beträgt 5 Sekunden.');
 $.lang.register('cooldown.coolcom.set', 'Abklingzeit für den Befehl !$1 wurde auf $2 Sekunden festgelegt.');
 $.lang.register('cooldown.coolcom.remove', 'Abklingzeit für den Befehl !$1 wurde entfernt.');
 $.lang.register('cooldown.cooldown.usage', 'Verwendung: !cooldown [togglemoderators / setdefault]');

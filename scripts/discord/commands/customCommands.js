@@ -127,7 +127,7 @@
         }
 
         if (s.match(/\(lasttip\)/g)) {
-            s = $.replace(s, '(lasttip)', ($.inidb.exists('donations', 'last_donation_message') ? $.inidb.get('donations', 'last_donation_message') : 'No donations found.'));
+            s = $.replace(s, '(lasttip)', ($.inidb.exists('donations', 'last_donation_message') ? $.inidb.get('donations', 'last_donation_message') : 'Keine Spenden gefunden.'));
         }
 
         if (s.match(/\(encodeurl ([\w\W]+)\)/)) {
@@ -236,7 +236,7 @@
                         try {
                             customAPIResponse = new JSONObject(origCustomAPIResponse).get(jsonCheckList[0]);
                         } catch (ex) {
-                            $.log.error('Failed to get data from API: ' + ex.message);
+                            $.log.error('Fehler beim Abrufen der Daten von der API: ' + ex.message);
                             return $.lang.get('discord.customcommands.customapijson.err', command);
                         }
                         customAPIReturnString += " " + customAPIResponse;
@@ -246,21 +246,21 @@
                                 try {
                                     jsonObject = new JSONObject(origCustomAPIResponse).get(jsonCheckList[i]);
                                 } catch (ex) {
-                                    $.log.error('Failed to get data from API: ' + ex.message);
+                                    $.log.error('Fehler beim Abrufen der Daten von der API: ' + ex.message);
                                     return $.lang.get('discord.customcommands.customapijson.err', command);
                                 }
                             } else if (!isNaN(jsonCheckList[i + 1])) {
                                 try {
                                     jsonObject = jsonObject.get(jsonCheckList[i]);
                                 } catch (ex) {
-                                    $.log.error('Failed to get data from API: ' + ex.message);
+                                    $.log.error('Fehler beim Abrufen der Daten von der API: ' + ex.message);
                                     return $.lang.get('discord.customcommands.customapijson.err', command);
                                 }
                             } else {
                                 try {
                                     jsonObject = jsonObject.get(jsonCheckList[i]);
                                 } catch (ex) {
-                                    $.log.error('Failed to get data from API: ' + ex.message);
+                                    $.log.error('Fehler beim Abrufen der Daten von der API: ' + ex.message);
                                     return $.lang.get('discord.customcommands.customapijson.err', command);
                                 }
                             }
@@ -268,7 +268,7 @@
                         try {
                             customAPIResponse = jsonObject.get(jsonCheckList[i]);
                         } catch (ex) {
-                            $.log.error('Failed to get data from API: ' + ex.message);
+                            $.log.error('Fehler beim Abrufen der Daten von der API: ' + ex.message);
                             return $.lang.get('discord.customcommands.customapijson.err', command);
                         }
                         customAPIReturnString += " " + customAPIResponse;

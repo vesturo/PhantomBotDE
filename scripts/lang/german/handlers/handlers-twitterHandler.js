@@ -34,9 +34,9 @@ $.lang.register('twitter.set.post.update.success', 'Twitter Post, für Aktualisi
 $.lang.register('twitter.set.message.usage', 'Verwendung; !twitter set message [online | gamechange]');
 $.lang.register('twitter.set.message.online.usage', 'Verwendung: !twitter set message online [Nachricht]. Tags: (game) (twitchurl). Aktuell: $1');
 $.lang.register('twitter.set.message.online.success', 'Twitter Auto-Post, wenn Online, auf $1 gesetzt.');
-$.lang.register('twitter.set.message.gamechange.usage', 'Verwendung: !twitter set message gamechange [Nachricht]. Tags: (game) (twitchurl). Currently: $1');
-$.lang.register('twitter.set.message.gamechange.success', 'Twitter Auto-Post, bei Spielwechsel, auf $1 gesetzt.');
-$.lang.register('twitter.set.message.update.usage', 'Verwendung: !twitter set message update [Nachricht]. Tags: (game) (twitchurl) (uptime). Currently: $1');
+$.lang.register('twitter.set.message.gamechange.usage', 'Verwendung: !twitter set message gamechange [Nachricht]. Tags: (game) (twitchurl). Aktuell: $1');
+$.lang.register('twitter.set.message.gamechange.success', 'Twitter Auto-Post bei Spielwechsel, auf $1 gesetzt.');
+$.lang.register('twitter.set.message.update.usage', 'Verwendung: !twitter set message update [Nachricht]. Tags: (game) (twitchurl) (uptime). Aktuell: $1');
 $.lang.register('twitter.set.message.update.success', 'Twitter Auto-Post, bei Aktualisierung, auf $1 gesetzt.');
 $.lang.register('twitter.set.updatetimer.usage', 'Verwendung: !twitter set updatetimer [Minuten]. Minimal erlaubt sind 60 Minuten um Ablehnung von doppelten Posts von Twitter zu verhindern.');
 $.lang.register('twitter.set.updatetimer.toosmall', 'Minimal erlaubt sind 180 Minuten um Ablehnung von doppelten Posts von Twitter zu verhindern.');

@@ -1,4 +1,10 @@
+[![forthebadge](https://forthebadge.com/images/badges/built-by-neckbeards.svg)](https://forthebadge.com)
+[![forthebadge](https://forthebadge.com/images/badges/made-with-javascript.svg)](https://forthebadge.com)
+[![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
 
+[![GitHub license](https://img.shields.io/github/license/vesturo/PhantomBotDE.svg?style=for-the-badge)](https://github.com/vesturo/PhantomBotDE/blob/master/LICENSE)
+[![GitHub issues](https://img.shields.io/github/issues/vesturo/PhantomBotDE.svg?style=for-the-badge)](https://github.com/vesturo/PhantomBotDE/issues)
+![GitHub release](https://img.shields.io/github/release/vesturo/PhantomBotDE.svg?style=for-the-badge)
 
 # PhantomBot-German-Translation
 

@@ -3,7 +3,7 @@
  */
 (function() {
     var toggle = $.getSetIniDbBoolean('discordSettings', 'streamlabsToggle', false),
-        message = $.getSetIniDbString('discordSettings', 'streamlabsMessage', 'Thank you very much (name) for the tip of $(amount) (currency)!'),
+        message = $.getSetIniDbString('discordSettings', 'streamlabsMessage', 'Vielen Dank (name) für deine Spende von $(amount) (currency)!'),
         channelName = $.getSetIniDbString('discordSettings', 'streamlabsChannel', ''),
         announce = false;
 
@@ -13,7 +13,7 @@
     $.bind('webPanelSocketUpdate', function(event) {
         if (event.getScript().equalsIgnoreCase('./discord/handlers/streamlabsHandler.js')) {
             toggle = $.getIniDbBoolean('discordSettings', 'streamlabsToggle', false);
-            message = $.getIniDbString('discordSettings', 'streamlabsMessage', 'Thank you very much (name) for the tip of $(amount) (currency)!');
+            message = $.getIniDbString('discordSettings', 'streamlabsMessage', 'TVielen Dank (name) für deine Spende von $(amount) (currency)!');
             channelName = $.getIniDbString('discordSettings', 'streamlabsChannel', '');
         }
     });
