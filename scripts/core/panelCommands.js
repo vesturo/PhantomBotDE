@@ -1,4 +1,4 @@
-/* 
+/*
  * This script is used to reload variables from scripts when you edit stuff on the panel. Only the bot can use these, and you can't disable them
  */
 

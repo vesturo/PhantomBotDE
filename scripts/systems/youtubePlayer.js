@@ -232,13 +232,13 @@
 
             // Hit 5 trys and nothing was found
             if (data[0].length() < 11) {
-                throw 'Keine Daten zurück gegeben.';
+                throw 'No data returned.';
             }
 
             videoId = data[0];
             videoTitle = data[1];
 
-            if (videoTitle.equalsIgnoreCase('Video ist Privat') || videoTitle.equalsIgnoreCase('keine Passenden Videos gefunden')) {
+            if (videoTitle.equalsIgnoreCase('video marked private') || videoTitle.equalsIgnoreCase('no search results found')) {
                 throw videoTitle;
             }
 
