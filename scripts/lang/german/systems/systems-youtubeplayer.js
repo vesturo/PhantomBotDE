@@ -56,7 +56,7 @@ $.lang.register('ytplayer.command.songrequest.failed', 'Hinzufügen von $1, zur 
 $.lang.register('ytplayer.command.previoussong', 'Vorheriger Musikwunsch war [$1], gewünscht von $2 aus $3.');
 $.lang.register('ytplayer.command.previoussong.404', 'Es gibt keinen vorherigen Songtitel anzuzeigen.');
 
-$.lang.register('ytplayer.command.currentsong', 'Aktueller Musikwunsch ist [$1], gewünscht von $2 aus $3.');
+$.lang.register('ytplayer.command.currentsong', 'Aktueller Musikwunsch ist [$1], gewünscht von $2 aus $3');
 $.lang.register('ytplayer.command.currentsong.404', 'Es gibt keinen aktuellen Song.');
 
 $.lang.register('ytplayer.command.delrequest.success', 'Song mit der ID [$1], dem Titel [$2], aus den Musikwünschen entfernt.');
